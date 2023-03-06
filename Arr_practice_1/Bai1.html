@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+  let x = [20, 9, 8, 10, 99, 23, 11, 3, 2, 67];
+  let result = [];
+  for(i =0; i < x.length; i++){
+    if(x[i] >= 10){
+      result.push(x[i]);
+    }
+  }
+  console.log(result)
+  document.write(x);
+  document.getElementById("demo").innerHTML = "Co " + result.length + " phan tu >= 10";
+
+</script>
+
+</body>
+</html>

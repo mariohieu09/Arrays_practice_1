@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let x = [1,223,3435,46,53,612,74,800,92,101];
+  let max = x[0];
+  let min = x[9];
+  for(i = 0; i< x.length - 1; i++){
+      if(max < x[i]){
+          max = x[i];
+      }else if(min > x[i]){
+              min =x[i];
+          }
+
+  }
+  document.write("Ta có mảng sau: " + x + "<br>");
+  document.write("Giá trị lớn nhất là: " + max + "<br>");
+  document.write("Giá trị bé nhất là: "+ min + "<br>");
+  document.write("Giá trị trung bình là: " + (min + max)/2);
+
+</script>
+</body>
+</html>
